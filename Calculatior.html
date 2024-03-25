@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" type="text/css" href="calculator.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1 id="heading">Simple Calculator</h1>
+    <div class="container">
+      <div class="calculator">
+        <input type="text" id="num1" placeholder="Enter a number">
+        <select id="operator">
+          <option value="add">+</option>
+          <option value="subtract">-</option>
+          <option value="multiply">*</option>
+          <option value="divide">/</option>
+        </select>
+        <input type="text" id="num2" placeholder="Enter another number">
+        <button  class="btn btn-success" onclick="calculate()">Calculate</button>
+        <div id="result-text"></div>
+      </div>
+    </div>
+    <script src="calculator.js"></script>
+  </body>
+</html>
